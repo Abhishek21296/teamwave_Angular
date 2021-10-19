@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { QuestionDetailComponent } from './question-detail/question-detail.component';
 import { QuestionListingComponent } from './question-listing/question-listing.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     NgbModule,
   ],
   providers: [],

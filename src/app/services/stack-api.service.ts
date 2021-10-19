@@ -574,6 +574,7 @@ export class StackApiService {
     return this.http.get(environment.apiUrl.concat(`/search/advanced`), {
       params: {
         site: 'stackoverflow',
+        filter: "!nKzQUR3Egv",
         ...params
       }
     })
