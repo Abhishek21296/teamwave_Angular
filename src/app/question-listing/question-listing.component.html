@@ -1,0 +1,22 @@
+<div class="card mt-2" style="width: 100%;">
+    <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <div class="row">
+            <div class="col-9">
+                <span class="bg-info mx-1 pb-1 px-2 rounded text-light" *ngFor="let tag of item.tags">{{tag}}</span>
+                <p class="m-0">
+                    <span>Views: {{item.view_count}}</span>
+                    <span>Answers: {{item.answer_count}}</span>
+                    <span>Score: {{item.score}}</span>
+                </p>
+            </div>
+            <div class="col-3">
+                <p class="m-0">{{item.owner.display_name}}</p>
+                <p class="m-0">{{item.creation_date | date: 'dd MMM yyy hh:mm'}}</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row-reverse">
+            <button class="btn button-primary" *ngIf="item.answer_count">View Answers</button>
+        </div>
+    </div>
+</div>

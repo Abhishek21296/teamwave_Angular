@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-3 sidenav">
+            <h4>Filters</h4>
+            <ul>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <div id="sticky-start"></div>
+            <div>
+                <h4>Results</h4>
+                <div *ngFor="let item of items">
+                    <question-listing [item]="item"></question-listing>
+                </div>
+            </div>
+        </div>
+        <div id="sticky-bottom"></div>
+    </div>
+</div>
